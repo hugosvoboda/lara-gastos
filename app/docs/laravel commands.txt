@@ -1,0 +1,4 @@
+# php artisan migrate:install       <- instala el sistema de control de versiones de las migraciones.
+# php artisan migrate:make create_users_table   <- crea una tabla con su timestamp de migración.
+# php artisan migrate       <- corre todas las migraciones hacia adelante.
+# php artisan migrate:rollback      <- retrocede las migraciones para eliminar tablas creadas por ejemplo.

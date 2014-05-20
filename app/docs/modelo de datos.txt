@@ -1,0 +1,92 @@
+lara-gastos
+Modelo de Datos
+---------------
+
+[ESP]
+perfiles
+    descripcion
+grupos
+    descripcion
+usuarios
+    grupos_id
+    perfiles_id
+    nombre
+    apellido
+    email
+    password
+    usuario
+operaciones_tipos
+  descripcion (ingreso, egreso)
+operaciones_tipos_clasificacion
+    operaciones_tipos_id
+    descripcion (sueldo, comida, remiss, cine, pasajes, super, colegio mile, tarjeta naranja)
+operaciones
+    usuarios_id
+    operaciones_tipos_id
+    impuestos_id
+  fecha
+  descripcion (compra de pasajes, compra supermercado, cobro de sueldo, pago colegio)
+  total
+operaciones_detalles
+    gastos_id
+  descripcion
+  monto
+impuestos
+  detalle (rentas, muni, expensas, luz, gas, agua)
+  monto
+  vencimiento
+  pagado
+cuentas
+  usuarios_id
+  total_ingreso_actual
+  total_egreso_actual
+operaciones
+    cuentas_id
+  gastos_id
+
+
+
+
+[ENG]
+
+profiles
+    descripcion
+groups
+    descripcion
+users
+    groups_id
+    profiles_id
+    nombre
+    apellido
+    email
+    password
+    usuario
+operations_types
+  descripcion (ingreso, egreso)
+operations_types_clasifications
+    operations_types_id
+    descripcion (sueldo, comida, remiss, cine, pasajes, super, colegio mile, tarjeta naranja)
+operations
+    usuarios_id
+    operations_types_id
+    taxes_id
+  fecha
+  descripcion (compra de pasajes, compra supermercado, cobro de sueldo, pago colegio)
+  total
+operations_details
+    operations_id
+  descripcion
+  monto
+taxes
+  detalle (rentas, muni, expensas, luz, gas, agua)
+  monto
+  vencimiento
+  pagado
+accounts
+  users_id
+  total_ingreso_actual
+  total_egreso_actual
+operations
+    accounts_id
+  operations_id
+    
